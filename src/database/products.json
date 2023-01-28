@@ -1,0 +1,94 @@
+{
+    "product": [
+      {
+        "id": 1,
+        "menuId" : 1,
+        "title": "카페 아메리카노",
+        "engTitle": "Caffe Americano",
+        "description": "진한 에스프레소와 뜨거운 물을 섞어 스타벅스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피",
+        "price": 3000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[94]_20210430103337157.jpg"
+      },
+      {
+        "id": 2,
+        "menuId" : 1,
+        "title": "나이트로 콜드 브루",
+        "engTitle": "Nitro Cold Brew",
+        "description": "나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마!",
+        "price": 4000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000479]_20210426091844065.jpg"
+      },
+      {
+        "id": 3,
+        "menuId" : 1,
+        "title": "우유",
+        "engTitle": "Milk",
+        "description": "부드럽고 담백한 신선한 우유",
+        "price": 5000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[18]_20210426095514150.jpg"
+      },
+      {
+        "id": 4,
+        "menuId" : 2,
+        "title": "리얼 블루베리 베이글",
+        "engTitle": "Blueberry Bagel",
+        "description": "블루베리의 상큼한 풍미가 매력적인 베이글",
+        "price": 6000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9300000003334]_20210310092057568.jpg"
+      },
+      {
+        "id": 5,
+        "menuId" : 2,
+        "title": "당근 피칸 케이크",
+        "engTitle": "Carrot Peacan Cake",
+        "description": "피칸과 당근을 넣어 구운 케이크 시트 사이에 크림치즈를 겹겹이 쌓은 후 윗면에 케이크 크럼을 토핑한 사각 모양의 케이크",
+        "price": 7000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2022/11/[9300000004430]_20221121150217180.jpg"
+      },
+      {
+        "id": 6,
+        "menuId" : 2,
+        "title": "B.E.L.T. 샌드위치",
+        "engTitle": "B.E.L.T. Sandwich",
+        "description": "주 재료인 베이컨, 계란, 로메인 상추, 토마토의 각각의 머리 글자를 따온 이름의 샌드위치",
+        "price": 8000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2022/10/[9300000000689]_20221011130104258.jpg"
+      },
+      {
+        "id": 7,
+        "menuId" : 3,
+        "title": "파스텔 블루 텀블러 473ml",
+        "engTitle": "Pastel blue tumbler 473ml",
+        "description": "파스텔 블루 컬러의 텀블러",
+        "price": 4000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2022/08/[9300000004104]_20220810152652583.jpg"
+      },
+      {
+        "id": 8,
+        "menuId" : 3,
+        "title": "파스텔 핑크 텀블러 473ml",
+        "engTitle": "Pastel pink tumbler 473ml",
+        "description": "파스텔 핑크 컬러의 텀블러",
+        "price": 4000,
+        "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2022/08/[9300000004105]_20220810152839570.jpg"
+      },
+      {
+        "id": 9,
+        "menuId" : 4,
+        "title": "스타벅스 설날 카드",
+        "engTitle": "Starbucks Fortune Card",
+        "description": "2023년 1월 출시 카드",
+        "price": 10000,
+        "image": "https://image.istarbucks.co.kr/cardImg/20221219/009806_WEB.png"
+      },
+      {
+        "id": 10,
+        "menuId" : 4,
+        "title": "스타벅스 Good Luck 카드",
+        "engTitle": "Starbucks Good Luck Card",
+        "description": "2022년 1월 출시 카드",
+        "price": 10000,
+        "image": "https://image.istarbucks.co.kr/cardImg/20220907/009446_WEB.png"
+      }
+    ]
+}
