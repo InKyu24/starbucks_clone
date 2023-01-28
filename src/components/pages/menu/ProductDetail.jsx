@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import products from '../../../database/products.json';
 import style from './ProductDetail.module.css';
 
 function ProductDetail() {
     const { productId } = useParams();
+    const navigate = useNavigate();
 
     return (
         <div className="container">
@@ -17,6 +18,7 @@ function ProductDetail() {
                                     <h4>
                                         {product.title}<br/>
                                         <span>{product.engTitle}</span>
+                                        <button className={style.btn} onClick={()=>navigate(-1)}>뒤로 가기</button>
                                     </h4>
                                     <p className={style.productInfo}>{product.description}</p>
                                     <div>

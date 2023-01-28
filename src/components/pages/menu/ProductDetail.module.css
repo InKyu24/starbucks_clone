@@ -41,12 +41,13 @@
 
 .btn {
     display:inline;
-    margin-left: 40%;
+    position: relative;
+    float: right;
     color:#2d2926;
     background-color: #f6f5ef;
     border:1px solid #ddd;
     box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
     cursor:pointer;
-    vertical-align:middle;
+    top: -5px;
     padding: 5px 15px;
 }
