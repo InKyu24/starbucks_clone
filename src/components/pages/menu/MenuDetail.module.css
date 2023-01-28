@@ -24,6 +24,7 @@
     cursor:pointer;
     vertical-align:middle;
     padding: 5px 15px;
+    font-size: 12px;
 }
 
 .productList li a div:hover {
