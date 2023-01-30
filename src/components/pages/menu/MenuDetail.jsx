@@ -9,13 +9,13 @@ function MenuDetail() {
     const [product, setProduct] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/menu/${menuId}`)
+        fetch(`http://localhost:3001/menus/${menuId}`)
             .then(res => res.json())
             .then(data => {
                 setMenu(data);
             })
 
-        fetch(`http://localhost:3001/product`)
+        fetch(`http://localhost:3001/products`)
             .then(res => res.json())
             .then(data => {
                 setProduct(data);
