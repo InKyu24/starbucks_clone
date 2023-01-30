@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import products from '../../../database/products.json';
 import style from './ProductDetail.module.css';
 
 function ProductDetail() {
     const { productId } = useParams();
     const navigate = useNavigate();
 
+    const [product, setProduct] = useState();
+
+    useEffect(() => {
+        fetch(`http://localhost:3001/product/${productId}`)
+            .then(res => res.json())
+            .then(data => {
+                setProduct(data);
+            })
+    }, []);
+
     return (
         <div className="container">
             {
-                products.product.map(product =>
-                    product.id == productId &&
+                product && 
                         <div key={product.id}>            
                             <div className={style.productView}>
                                 <div className={style.productDetail}>
@@ -40,7 +48,6 @@ function ProductDetail() {
                                 </div>
                             </div>
                         </div>                     
-                )
             }
         </div>
     );

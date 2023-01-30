@@ -1,4 +1,30 @@
 {
+    "menu": [
+      {
+        "id": 1,
+        "title": "음료",
+        "description": "마실 것",
+        "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      },
+      {
+        "id": 2,
+        "title": "푸드",
+        "description": "먹을 것",
+        "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      },
+      {
+        "id": 3,
+        "title": "상품",
+        "description": "쓸 것",
+        "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+      },
+      {
+        "id": 4,
+        "title": "카드",
+        "description": "긁을 것",
+        "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      }
+    ],
     "product": [
       {
         "id": 1,
@@ -90,5 +116,8 @@
         "price": 10000,
         "image": "https://image.istarbucks.co.kr/cardImg/20220907/009446_WEB.png"
       }
-    ]
+    ],
+    "cart": [{
+
+    }]
 }

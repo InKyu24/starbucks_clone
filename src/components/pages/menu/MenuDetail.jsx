@@ -1,34 +1,48 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import products from '../..//../database/products.json';
-import menus from '../../../database/menu.json';
 import style from './MenuDetail.module.css';
 
 function MenuDetail() {
     const { menuId } = useParams();
     
+    const [menu, setMenu] = useState();
+    const [product, setProduct] = useState();
+
+    useEffect(() => {
+        fetch(`http://localhost:3001/menu/${menuId}`)
+            .then(res => res.json())
+            .then(data => {
+                setMenu(data);
+            })
+
+        fetch(`http://localhost:3001/product`)
+            .then(res => res.json())
+            .then(data => {
+                setProduct(data);
+            })
+    }, []);
+
     return ( 
         <div className="container">
             {
-                menus.menu.map(menu => 
-                    <h1 key={menu.id}>{menu.id == menuId && menu.title}</h1>
-                )
+                menu && 
+                    <h1 key={menu.id}>{menu.title}</h1>
             }
             <ul className={style.productList}>
-            {
-                products.product.map(product => (
-                    product.menuId == menuId && (
-                        <li key={product.id}>
-                            <Link to={`../detail/${product.id}`}>
-                                <img src={product.image} alt={product.title} />
-                                <div>
-                                    {product.title}
-                                </div>
-                            </Link>
-                        </li>
-                    )
-                ))
-            }
+                {
+                    product && product.map(product => (
+                        product.menuId == menuId && (
+                            <li key={product.id}>
+                                <Link to={`../detail/${product.id}`}>
+                                    <img src={product.image} alt={product.title} />
+                                    <div>
+                                        {product.title}
+                                    </div>
+                                </Link>
+                            </li>
+                        )
+                    ))
+                }
             </ul>
         </div>
     );
