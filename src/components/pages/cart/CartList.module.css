@@ -1,0 +1,62 @@
+ul {
+    padding: 0;
+}
+li {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.productInfo {
+    display: flex;
+    width: 100%;
+}
+
+.leftBox {
+    width: 30%
+}
+
+li img {
+    width: 100%;
+}
+
+.rightBox {
+    width: 70%;
+}
+
+.rightBox div {
+    margin-left: 6px
+}
+
+.engTitle {
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+}
+
+.productPrice {
+    font-size: 14px;
+    font-weight: 500;
+    align-self: end;
+}
+
+.count {
+    margin-right: 20px;
+}
