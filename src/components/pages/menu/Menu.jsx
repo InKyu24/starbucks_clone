@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import style from './Menu.module.css';
+import MenuList from './MenuList';
+import MenuSearchBox from './MenuSearchBox';
 
 function Menu() {
     const [menu, setMenu] = useState();
@@ -15,21 +15,8 @@ function Menu() {
     return (
         <div className="container">
             <h1>Menu Page</h1>
-
-            <ul className={style.menuList}>
-                {
-                    menu && menu.map(menu => (
-                        <li key={menu.id}>
-                            <Link to={String(menu.id)}>
-                                <img src={menu.thumbnail} alt={menu.title} />
-                                <div>
-                                    {menu.title} - {menu.description}
-                                </div>
-                            </Link>
-                        </li>
-                    ))
-                }
-            </ul>
+            <MenuSearchBox />
+            <MenuList menu={menu} />
         </div>
     );
 }

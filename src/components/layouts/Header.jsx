@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo/logo.png'
-import style from "./Header.module.css";
+import "./Header.module.css";
 
 function Header() {
     return ( 
@@ -24,6 +24,11 @@ function Header() {
                     <li>
                         <Link to='store'>
                             STORE
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='login'>
+                            LOGIN
                         </Link>
                     </li>
                 </ul>

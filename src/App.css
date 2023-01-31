@@ -1,8 +1,13 @@
+:root {
+    --sb-bg: #f6f5ef;
+}
+
 body {
+    padding: 0px;
     margin : 0px;
 }
 
 .container {
     width: 90%;
-    margin: 90px auto;
+    margin: 0 auto;
 }

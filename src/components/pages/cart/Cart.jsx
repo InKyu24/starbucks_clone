@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useMemo } from "react";
 import CartList from "./CartList";
 
 function Cart() {
@@ -11,6 +12,7 @@ function Cart() {
         setCartList(data);
       });
   }, []);
+
   return (
     <div className="container">
       {cartList.length !== 0 ? (
