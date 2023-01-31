@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './MenuSearchBox.module.css';
 import MenuCategoryList from './MenuCategoryList';
 
-function MenuSearchBox() {
+function MenuSearchBox({searchList, setSearchList}) {
   const [isOpen, setIsOpen] = useState(true);
 
   const searchShow = isOpen === false && style.displayNone;
@@ -21,7 +21,7 @@ function MenuSearchBox() {
           <dl>
             <dt className={style.category}>카테고리</dt>
             <dd>
-              <MenuCategoryList />
+              <MenuCategoryList searchList={searchList} setSearchList={setSearchList} />
             </dd>
             <dt className={style.theme}>테마</dt>
             <dd style={{ display: 'none' }}>
