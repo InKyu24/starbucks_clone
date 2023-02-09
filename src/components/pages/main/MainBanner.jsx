@@ -21,7 +21,6 @@ function MainBanner() {
                     link={mainBanner.button.link}
                 />
             </div>
-            
         </section>
      );
 }

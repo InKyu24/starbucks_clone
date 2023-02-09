@@ -4,16 +4,16 @@ import Title from "../../ui/TItle";
 import { useRecoilState } from "recoil";
 import { loginState } from "../../../state/loginState";
 import { tokenState } from "../../../state/tokenState";
+import Lottie from "lottie-react";
+import animation from "../../../database/cat.json";
 
 function Login() {
   const [loginData, setLoginData] = useState({});
   const [login, setLogin] = useRecoilState(loginState);
   const [token, setToken] = useRecoilState(tokenState);
-
   useEffect(() => {
     console.log(login, token);
   }, [loginData]);
-
   const handleLogin = (e) => {
     fetch("https://dummyjson.com/auth/login", {
       method: "POST",
@@ -33,7 +33,6 @@ function Login() {
       })
       .catch((err) => console.error(err));
   };
-
   const handleLogout = () => {
     localStorage.clear();
     setLogin(false);
@@ -42,6 +41,7 @@ function Login() {
   return (
     <div className="container">
       <Title />
+      <Lottie animationData={animation} loop={true} style={{width:'150px'}}/>
       <StarButton
         title={login ? "Logout" : "Login"}
         link={login ? "/logout" : "/login"}
