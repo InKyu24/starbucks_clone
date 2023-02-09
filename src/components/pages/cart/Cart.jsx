@@ -13,6 +13,8 @@ function Cart() {
       });
   }, []);
 
+  // 하나
+  
   return (
     <div className="container">
       {cartList.length !== 0 ? (
