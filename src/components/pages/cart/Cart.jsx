@@ -13,8 +13,10 @@ function Cart() {
       });
   }, []);
 
-  // 하나
-  
+  // 하나. 데이터 가져오기
+
+  // 둘. 데이터 세부항목 가져오기
+
   return (
     <div className="container">
       {cartList.length !== 0 ? (
